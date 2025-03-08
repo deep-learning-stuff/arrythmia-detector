@@ -1,0 +1,13 @@
+accuracy records
+
+todos las características 		-->		The accuracy is 96.30010277492292 %
+intervalo tiempo 			-->		The accuracy is 84.62413742475408 %
+intervalo picos 			-->		The accuracy is 86.16209073557481 %
+Morfología del Complejo QRS 		-->		The accuracy is 90.86404345911026 %
+selection aleatoria datos sanos 1 	-->		The accuracy is 96.13125825869916 %
+selection aleatoria datos sanos 2	-->		The accuracy is 96.40654823080311 %
+lr 0.001				--> 		The accuracy is 97.47467332256645 %
+lr 0.01					-->		The accuracy is 96.74056673028923 %
+todas las carac y 30 epochs		-->		The accuracy is 96.71854353252091 %
+
+ 
