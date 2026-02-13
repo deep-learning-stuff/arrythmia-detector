@@ -1,46 +1,44 @@
 # HeartbeatVision: ECG Arrhythmia Classification 🫀
 
-HeartbeatVision es un proyecto de Deep Learning diseñado para la detección automática de anomalías en señales de electrocardiograma (ECG). El modelo clasifica los latidos del corazón en dos categorías principales: pacientes sanos y pacientes con arritmias u otras patologías cardíacas.
+HeartbeatVision is a Deep Learning project focused on the automated detection of cardiac anomalies through Electrocardiogram (ECG) signals. The model classifies heartbeats into two primary categories: healthy individuals and patients with arrhythmias or other cardiac pathologies.
 
-## 🚀 Descripción del Proyecto
-La interpretación manual de un ECG requiere personal experto y tiempo. Este proyecto busca automatizar el triaje inicial mediante el uso de Redes Neuronales, permitiendo una identificación rápida de señales patológicas que podrían indicar condiciones críticas.
+## 🚀 Project Overview
+Manual interpretation of ECGs requires expert knowledge and significant time. This project aims to automate the initial screening process using Neural Networks, enabling rapid identification of pathological patterns that may indicate critical health conditions.
 
-### Características principales:
-* **Procesamiento de Señal:** Limpieza y normalización de datos de ECG para su análisis.
-* **Arquitectura Deep Learning:** Implementado en **PyTorch**, utilizando capas densas y funciones de activación optimizadas para la clasificación binaria.
-* **Evaluación de Precisión:** El modelo incluye métricas de rendimiento como Accuracy y Loss tracking para asegurar la fiabilidad del diagnóstico.
+### Key Features:
+* **Signal Processing:** Data cleaning, normalization, and balancing of ECG signals for robust analysis.
+* **Deep Learning Architecture:** Built with **PyTorch**, utilizing a Multi-Layer Perceptron (MLP) with optimized activation functions for binary classification.
+* **Performance Evaluation:** Includes tracking of Accuracy and Loss metrics to ensure diagnostic reliability.
+* **Variational Analysis:** Includes a dedicated notebook for hyperparameter testing and model optimization.
 
+## 🛠️ Technologies Used
+* **Language:** Python
+* **AI Framework:** PyTorch
+* **Data Analysis:** NumPy, Pandas
+* **Visualization:** Matplotlib
+* **Environment:** Google Colab / Jupyter Notebook
 
+## 📈 Methodology
+The model is trained using a dataset of pre-segmented heartbeat signals. The workflow follows these steps:
+1.  **Data Loading:** Integration with Google Drive for handling large datasets.
+2.  **Architecture Design:** A neural network specifically tuned to extract temporal features from the heart's electrical activity.
+3.  **Optimization:** Implementation of the `Adam` optimizer and `BCELoss` (Binary Cross Entropy) for precise weight adjustments.
 
-## 🛠️ Tecnologías Utilizadas
-* **Lenguaje:** Python
-* **Framework de IA:** PyTorch
-* **Análisis de Datos:** NumPy, Pandas
-* **Visualización:** Matplotlib
-* **Entorno:** Jupyter Notebook / Google Colab
+## 💻 Setup & Usage
+The project is organized into Jupyter Notebooks for a step-by-step execution:
 
-## 📈 Metodología
-El modelo se entrena utilizando un dataset de señales de latidos pre-segmentados. El flujo de trabajo incluye:
-1.  **Carga de datos:** Conexión con Google Drive para procesar datasets extensos.
-2.  **Arquitectura del Modelo:** Una red neuronal diseñada para extraer patrones temporales en la señal eléctrica del corazón.
-3.  **Optimización:** Uso de optimizadores como `Adam` o `SGD` y funciones de pérdida como `BCELoss` (Binary Cross Entropy).
-
-
-
-## 💻 Configuración y Uso
-El proyecto está estructurado en notebooks de Jupyter para facilitar su ejecución paso a paso:
-
-1.  **Requisitos:** Asegúrate de tener instaladas las dependencias:
+1.  **Prerequisites:** Install the required dependencies:
     ```bash
     pip install torch pandas numpy matplotlib tqdm
     ```
-2.  **Ejecución:** * Abre `heartbeatvision.ipynb` en Google Colab o Jupyter.
-    * Monta tu unidad de Drive si los datos están almacenados allí.
-    * Ejecuta las celdas de entrenamiento para generar el modelo.
-    * Utiliza el archivo `heartbeatvision variaciones.ipynb` para probar diferentes configuraciones de hiperparámetros.
+2.  **Execution:**
+    * Open `heartbeatvision.ipynb` in Google Colab or your local Jupyter environment.
+    * Mount your Drive if the dataset is stored there.
+    * Run the training cells to generate the model.
+    * Use `heartbeatvision variaciones.ipynb` to explore different model architectures and variations.
 
-## 👥 Autores
-Desarrollado como parte de un trabajo de investigación (TR) sobre la aplicación de la inteligencia artificial en el sector sanitario.
+## 👥 Authors
+Developed as part of a Research Project (TR) on the application of Artificial Intelligence in the healthcare sector.
 
 ---
-*Descargo de responsabilidad: Este modelo es un proyecto académico y no debe utilizarse como sustituto de un diagnóstico médico profesional.*
+*Disclaimer: This project is for academic purposes and should not be used as a substitute for professional medical diagnosis.*
